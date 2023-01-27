@@ -1,0 +1,144 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: rgb(230, 43, 74);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    min-height: 230px;
+    display: flex;
+    justify-content: center;
+}
+
+.product {
+    margin: 10px 30px;
+    background: white;
+    width: 30%;
+    height: 210px;
+    border-radius: 6px;
+}
+
+.product img {
+    margin-left: 150px;
+    height: 100px;
+}
+
+#price {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background: rgb(230, 43, 74);
+    margin: 10px 30px;
+    padding: 6px 10px;
+    border-radius: 30px;
+}
+
+#actualPrice {
+    text-decoration: line-through;
+}
+
+#about {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+#about div {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(75, 75, 75);
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.containerTwo {
+    display: flex;
+    border-radius: 10px;
+    background: white;
+    min-height: 180px;
+    margin: 10px 20px;
+}
+
+#title {
+    margin-top: 10px;
+    background: rgb(243, 130, 38);
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.box {
+    display: flex;
+    width: 90vw;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.item1 {
+    margin: 25px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.item1 {
+    text-align: justify;
+}
+
+#heading {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#name {
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(34, 34, 34);
+}
+
+button {
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: 1px solid;
+    background-color: rgb(241, 38, 38);
+    color: white;
+}
+
+.containerThree {
+    display: flex;
+    border-radius: 5px;
+    margin: 10px 20px;
+    background: white;
+    min-height: 180px;
+}
+
+@media screen and (max-width: 950px) {
+    .container {
+        display: block;
+    }
+
+    .product {
+        width: calc(100% - 60px);
+    }
+
+    .containerTwo {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .box {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+}
